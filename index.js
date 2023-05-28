@@ -1,2 +1,2 @@
 const colors = require('colors');
-console.log("ehsan".red);
+                console.log("ehsan".   red);
