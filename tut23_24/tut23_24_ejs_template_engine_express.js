@@ -4,8 +4,8 @@ const path = require('path');
 const app = express();
 const port = 3000
 
-const view_path= path.join(__dirname,'./viewstr');
-console.log(view_path);
+const view_path= path.join(__dirname,'./views');
+// console.log(view_path);
 
 app.set('view engine','ejs');
 app.set('views',view_path)
@@ -13,9 +13,10 @@ app.set('views',view_path)
 app.get('/profile', (req, res) => {
   const user = {
     name:'Ehsan Ansari',
-    email:'ehsna@3.com',
+    email:'ehsan@b747.com',
     city:'Ghazipur',
-    skill:['php','c++','python','java','c#']
+    skill:['php','c++','python','java','c#'],
+    age:[3,4,5,6,],
   }
   res.render('profile',{user});
 })
